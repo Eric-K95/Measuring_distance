@@ -28,7 +28,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.begin(20, 4);
-  lcd.setCursor(5, 0); //fifth column, row #1
+  lcd.setCursor(5, 0); //sixth column, row #1
   lcd.print("Hello!");
   lcd.setCursor(0, 1); //first column, row #2
   lcd.print("Mechatronics:)");
@@ -63,21 +63,21 @@ void loop() {
   //print values on lcd screen
   lcd.setCursor(0, 0); //first column, row #1
   lcd.print("Distance:"); //print name on LCD
-  lcd.setCursor(13, 0); //first column, row #2
+  lcd.setCursor(13, 0); //fourteenth column, row #1
   lcd.print("cm"); //print units
-  lcd.setCursor(10, 0); //tenth column, row #1
+  lcd.setCursor(10, 0); //eleventh column, row #1
   lcd.print(dist); //print distance on LCD
   lcd.setCursor(0, 1); //first coulumn, row#2
   lcd.print("Temp:");
-  lcd.setCursor(5, 1); //fifth coulumn, row#2
+  lcd.setCursor(5, 1); //sixth coulumn, row#2
   lcd.print(tempC);
-  lcd.setCursor(7, 1); //seventh coulumn, row#2
+  lcd.setCursor(7, 1); //eight coulumn, row#2
   lcd.print("c");  //unit of temperature
-  lcd.setCursor(8, 1); //eight coulumn, row#2
+  lcd.setCursor(8, 1); //nineth coulumn, row#2
   lcd.print("Humi:");
-  lcd.setCursor(13, 1); //thirteenth coulumn, row#2
+  lcd.setCursor(13, 1); //fourteenth coulumn, row#2
   lcd.print(humi);
-  lcd.setCursor(15, 1); //fifteenth coulumn, row#2
+  lcd.setCursor(15, 1); //sixteenth coulumn, row#2
   lcd.print("%"); //percentage of huminity
   delay(1000); //delay 1000ms
   lcd.clear(); //clear the LCD screen to show next measurement
